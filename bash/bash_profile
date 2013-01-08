@@ -1,3 +1,12 @@
 export PATH=/usr/local/share/npm/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if 
+  which rbenv > /dev/null; then eval "$(rbenv init -)"; 
+fi
+
+# Enable color by default in Terminal output
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
