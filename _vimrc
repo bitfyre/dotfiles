@@ -19,6 +19,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'bitfyre/solarized.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'claco/jasmine.vim'
 " Bundle 'Lokaltog/vim-easymotion'
 
 " vim-scripts repos
