@@ -46,9 +46,12 @@ filetype plugin indent on     " required!
 """""""""""""""""""""""""""
 
 syntax enable
-"set background=dark
-"colorscheme solarized
-"let g:solarized_termcolors=256
+
+if has("gui_running")
+	set background=dark
+	colorscheme solarized
+	let g:solarized_termcolors=256
+endif
 
 
 """""""""""""""""""""""""""
