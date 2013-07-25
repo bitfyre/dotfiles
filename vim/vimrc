@@ -7,6 +7,11 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Manage Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 """""""""""""""""""""""""""
 " let Vundle manage Vundle
 """""""""""""""""""""""""""
@@ -14,7 +19,9 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
+"""""""""""""""""""""""""""
+" My Bundles
+"""""""""""""""""""""""""""
 "
 " original repos on github
 Bundle 'tpope/vim-fugitive'
@@ -45,7 +52,12 @@ Bundle 'FuzzyFinder'
 " Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
+"""""""""""""""""""""""""""
+" Enable Plugin Filetype detection
+" and Indetation
+"""""""""""""""""""""""""""
 filetype plugin indent on     " required!
+
 "
 " Brief help
 " :BundleList          - list configured bundles
@@ -56,10 +68,47 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display configs for text editing 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""
+" Use 2 spaces instead of tab
+"""""""""""""""""""""""""""
+:set expandtab
+:set ts=2
+:set shiftwidth=2
+
+"""""""""""""""""""""""""""
+" Line numbers
+"""""""""""""""""""""""""""
+:set nu " Line numbers
+:set scrolloff=4 " Don't touch bottom/top of screen by 8
+
+"""""""""""""""""""""""""""
+" Highlight current line
+"""""""""""""""""""""""""""
+:set cul
+
+"""""""""""""""""""""""""""
+" Show row and column number
+"""""""""""""""""""""""""""
+:set ruler
+
+"""""""""""""""""""""""""""
+" Show trailing whitespace
+"""""""""""""""""""""""""""
+set list
+
+" But only interesting whitespace
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
 """""""""""""""""""""""""""
 " Syntax Highligh Config
 """""""""""""""""""""""""""
-
 syntax enable
 
 if has("gui_running")
@@ -68,6 +117,44 @@ if has("gui_running")
 	let g:solarized_termcolors=256
 endif
 
+"""""""""""""""""""""""""""
+" Set font size
+"""""""""""""""""""""""""""
+if has("gui_running")
+  set guifont=Anonymous\ Pro:h14
+endif
+
+"""""""""""""""""""""""""""
+" Show trailing whitespace
+"""""""""""""""""""""""""""
+set list
+
+" But only interesting whitespace
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Motion Configs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""
+" Define leader
+"""""""""""""""""""""""""""
+let mapleader = ","
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" File handling properties
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""
+" Setup Menu completion in command mode
+"""""""""""""""""""""""""""
+set wildmenu
+set wildignore=*~,.git,tmp,*.log,target/**
+set wildmode=list:longest,full
 
 """""""""""""""""""""""""""
 " HTML Indent config for vim-javascript
@@ -76,3 +163,8 @@ endif
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+"""""""""""""""""""""""""""
+" Map .less to .css
+"""""""""""""""""""""""""""
+nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
