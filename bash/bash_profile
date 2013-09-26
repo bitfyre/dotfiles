@@ -1,15 +1,10 @@
+. "$HOME/.bashrc"
+
 export PATH=/usr/local/share/npm/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
 
-if 
+if
   which rbenv > /dev/null; then eval "$(rbenv init -)"; 
 fi
 
-# Enable color by default in Terminal output
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-## Add git completion
-source /usr/local/etc/bash_completion.d/git-completion.bash

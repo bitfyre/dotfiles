@@ -5,11 +5,16 @@ Session.vim
 
 # OSX.gitignore
 .DS_Store
+
 # Thumbnails
 ._*
+
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
 
 # vim history stuffs
 vim/.vim/.netrwhist
+
+# local config ignores
+bash/bashrc.local

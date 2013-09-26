@@ -1,0 +1,8 @@
+# Enable color by default in Terminal output
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+export CLICOLOR LSCOLORS
+
+[ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
+[ ! -f "$HOME/.bashrc.completion" ] || . "$HOME/.bashrc.completion"
