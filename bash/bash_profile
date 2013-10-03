@@ -1,6 +1,6 @@
 . "$HOME/.bashrc"
 
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/tomcat6/6.0.37/bin:$HOME/.rbenv/bin:$HOME/Documents/projects/evernote/DevTools/bin:$PATH
 
 if
   which rbenv > /dev/null; then eval "$(rbenv init -)"; 
