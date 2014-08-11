@@ -4,7 +4,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 
@@ -16,8 +16,8 @@ call vundle#begin()
 " let Vundle manage Vundle
 """""""""""""""""""""""""""
 
-" required! 
-Plugin 'gmarik/vundle'
+" required!
+Plugin 'gmarik/Vundle.vim'
 
 """""""""""""""""""""""""""
 " My Bundles
@@ -53,14 +53,19 @@ Plugin 'FuzzyFinder'
 " Plugin 'git://git.wincent.com/command-t.git'
 " ...
 
-call vundle#end()
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
 
 """""""""""""""""""""""""""
 " Enable Plugin Filetype detection
 " and Indetation
 """""""""""""""""""""""""""
+
 filetype plugin indent on     " required!
 
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -70,7 +75,6 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-" NOTE: comments after Bundle command are not allowed..
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
