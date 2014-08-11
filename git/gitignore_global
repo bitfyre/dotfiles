@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+lucene/*
 
 # Packages #
 ############
@@ -27,7 +28,6 @@
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 
