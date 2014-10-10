@@ -1,6 +1,6 @@
 . "$HOME/.bashrc"
 
-export PATH=$HOME/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/tomcat6/6.0.37/bin:$HOME/.rbenv/bin:$HOME/Documents/projects/evernote/DevTools/bin:$PATH
+export PATH=$HOME/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/tomcat/8.0.9/bin:$HOME/.rbenv/bin:$HOME/Documents/projects/evernote/DevTools/bin:$PATH
 
 if
   which rbenv > /dev/null; then eval "$(rbenv init -)"; 
@@ -10,5 +10,4 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Allow gulp to watch the number of files we need
-ulimit -n 16384
-ulimit -u 4096
+ulimit -S -n 1024
