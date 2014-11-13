@@ -10,3 +10,5 @@
 	excludesfile = /Users/alemanski/.gitignore_global
 [alias]
 	rb = rebase origin/master
+[gerrit]
+	createchangeid = true
