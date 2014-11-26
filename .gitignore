@@ -18,3 +18,4 @@ vim/.vim/.netrwhist
 
 # local config ignores
 bash/bashrc.local
+git/gitconfig.local

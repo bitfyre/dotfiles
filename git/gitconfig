@@ -1,14 +1,15 @@
 [user]
 	name = Alex Lemanski
-	email = #########
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
 	editor = vim
-	excludesfile = /Users/alemanski/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [alias]
 	rb = rebase origin/master
 [gerrit]
 	createchangeid = true
+[include]
+	path = ~/.gitconfig.local
