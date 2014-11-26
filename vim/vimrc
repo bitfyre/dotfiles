@@ -33,7 +33,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'bitfyre/solarized.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'claco/jasmine.vim'
-Plugin 'wincent/Command-T'
+Plugin 'wincent/command-t'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bitfyre/vim-indent-html'
@@ -44,6 +44,11 @@ Plugin 'tristen/vim-sparkup'
 "Plugin 'tpope/vim-surround'
 Plugin 'digitaltoad/vim-jade'
 " Plugin 'Lokaltog/vim-easymotion'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'bling/vim-airline'
+Plugin 'majutsushi/tagbar'
+Plugin 'mbbill/undotree'
+Plugin 'Lokaltog/powerline-fonts' " Bundle 'Lokaltog/vim-easymotion'
 
 " vim-scripts repos
 Plugin 'L9'
@@ -129,7 +134,7 @@ endif
 " Set font size
 """""""""""""""""""""""""""
 if has("gui_running")
-  set guifont=Anonymous\ Pro:h14
+  set guifont=Anonymice\ Powerline:h14
 endif
 
 """""""""""""""""""""""""""
@@ -176,3 +181,24 @@ let g:html_indent_style1 = "inc"
 " Map .less to .css
 """""""""""""""""""""""""""
 nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
+
+
+"""""""""""""""""""""""""""
+" Tagbar key mapping
+"""""""""""""""""""""""""""
+nmap <F8> :TagbarToggle<CR>
+
+"""""""""""""""""""""""""""
+" Vim Airline config
+"""""""""""""""""""""""""""
+let g:airline_powerline_fonts = 1
+
+
+"""""""""""""""""""""""""""
+" undotree
+"""""""""""""""""""""""""""
+if has("persistent_undo")
+    set undodir='~/.undodir/'
+    set undofile
+endif
+
