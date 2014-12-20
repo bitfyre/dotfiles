@@ -11,3 +11,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Allow gulp to watch the number of files we need
 ulimit -S -n 1024
+
+## Add git completion
+source /usr/local/etc/bash_completion.d/git-completion.bash

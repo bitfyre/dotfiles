@@ -47,7 +47,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'mbbill/undotree'
-Plugin 'Lokaltog/powerline-fonts' " Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/powerline-fonts'
 
 " vim-scripts repos
 Plugin 'L9'
