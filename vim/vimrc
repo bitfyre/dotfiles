@@ -133,7 +133,7 @@ endif
 " Set font size
 """""""""""""""""""""""""""
 if has("gui_running")
-  set guifont=Anonymice\ Powerline:h14
+  set guifont=Sauce\ Code\ Powerline:h13
 endif
 
 """""""""""""""""""""""""""
