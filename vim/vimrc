@@ -198,7 +198,17 @@ let g:airline_powerline_fonts = 1
 " undotree
 """""""""""""""""""""""""""
 if has("persistent_undo")
-    set undodir='~/.undodir/'
-    set undofile
+  set undodir='~/.undodir/'
+  set undofile
 endif
 
+"""""""""""""""""""""""""""
+" Folding
+"
+" Set default to indent, but allow manual as well
+"""""""""""""""""""""""""""
+set foldmethod=indent
+"augroup vimrc
+"  au BufReadPre * setlocal foldmethod=indent
+"  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+"augroup END
