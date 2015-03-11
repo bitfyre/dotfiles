@@ -9,6 +9,9 @@
 	excludesfile = ~/.gitignore_global
 [alias]
 	rb = rebase origin/master
+  lg = !git --no-pager log -n 20 --branches --tags --graph \
+      --date=relative \
+      --pretty=format:\"%h  %ad  %C(red)%ae%Creset%x09%C(green)%d %Creset%s\"
 [gerrit]
 	createchangeid = true
 [include]

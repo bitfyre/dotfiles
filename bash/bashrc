@@ -4,5 +4,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 export CLICOLOR LSCOLORS
 
+export EDITOR=vim
+
 [ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
 [ ! -f "$HOME/.bashrc.completion" ] || . "$HOME/.bashrc.completion"
