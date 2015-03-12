@@ -166,7 +166,7 @@ let mapleader = ","
 " Setup Menu completion in command mode
 """""""""""""""""""""""""""
 set wildmenu
-set wildignore=*~,.git,tmp,*.log,target/**
+set wildignore=*~,.git,tmp,*.log,target/**,node_modules/**
 set wildmode=list:longest,full
 
 """""""""""""""""""""""""""
@@ -212,3 +212,9 @@ set foldmethod=indent
 "  au BufReadPre * setlocal foldmethod=indent
 "  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 "augroup END
+"
+
+"""""""""""""""""""""""""""
+" Command-T config
+"""""""""""""""""""""""""""
+let g:CommandTFileScanner = "watchman"
