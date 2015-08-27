@@ -8,3 +8,7 @@ export EDITOR=vim
 
 [ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
 [ ! -f "$HOME/.bashrc.completion" ] || . "$HOME/.bashrc.completion"
+
+# Load nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

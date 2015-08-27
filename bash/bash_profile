@@ -1,10 +1,29 @@
 . "$HOME/.bashrc"
 
-export PATH=$HOME/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH
+## Load pyenv-virtualenv
+export PATH=$HOME/.pyenv:$PATH
+
+if
+  which pyenv > /dev/null;
+  then eval "$(pyenv init -)";
+fi
+
+if
+  which pyenv-virtualenv-init > /dev/null;
+  then eval "$(pyenv virtualenv-init -)";
+fi
+
+## Load rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
 
 if
   which rbenv > /dev/null; then eval "$(rbenv init -)"; 
 fi
+
+# Add Hombrew to path
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+#export PATH=$HOME/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
