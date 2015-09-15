@@ -3,22 +3,9 @@
 ## Load pyenv-virtualenv
 export PATH=$HOME/.pyenv:$PATH
 
-if
-  which pyenv > /dev/null;
-  then eval "$(pyenv init -)";
-fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-if
-  which pyenv-virtualenv-init > /dev/null;
-  then eval "$(pyenv virtualenv-init -)";
-fi
-
-## Load rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
-
-if
-  which rbenv > /dev/null; then eval "$(rbenv init -)"; 
-fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # Add Hombrew to path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
@@ -33,3 +20,13 @@ ulimit -S -n 1024
 
 ## Add git completion
 source /usr/local/etc/bash_completion.d/git-completion.bash
+
+## Load rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+## Load nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+export PATH=$HOME/.npm-packages/bin:$PATH

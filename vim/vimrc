@@ -135,7 +135,7 @@ endif
 " Set font size
 """""""""""""""""""""""""""
 if has("gui_running")
-  set guifont=Sauce\ Code\ Powerline:h13
+  set guifont=Hack:h13
 endif
 
 """""""""""""""""""""""""""
