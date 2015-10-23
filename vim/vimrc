@@ -50,6 +50,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'mbbill/undotree'
 Plugin 'Lokaltog/powerline-fonts'
 Plugin 'slim-template/vim-slim'
+Plugin 'jdonaldson/vaxe'
 
 " vim-scripts repos
 Plugin 'L9'
