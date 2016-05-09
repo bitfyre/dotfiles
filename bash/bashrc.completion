@@ -8,6 +8,20 @@ if [ -f `brew --prefix`/etc/bash_completion.d/rails.bash ]; then
     source `brew --prefix`/etc/bash_completion.d/rails.bash
 fi
 
+if [ -f `brew --prefix`/etc/bash_completion.d/rails ]; then
+    source `brew --prefix`/etc/bash_completion.d/rails
+fi
+
+if [ -f `brew --prefix`/etc/bash_completion.d/docker ]; then
+    source `brew --prefix`/etc/bash_completion.d/docker
+fi
+
+## Add git completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
 
 ## Add npm completion
 [[ `which npm` ]] && eval "$(npm completion -)"
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi

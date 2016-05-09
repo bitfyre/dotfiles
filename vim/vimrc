@@ -17,7 +17,7 @@ call vundle#begin()
 """""""""""""""""""""""""""
 
 " required!
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 """""""""""""""""""""""""""
 " My Bundles
@@ -51,6 +51,7 @@ Plugin 'mbbill/undotree'
 Plugin 'Lokaltog/powerline-fonts'
 Plugin 'slim-template/vim-slim'
 Plugin 'jdonaldson/vaxe'
+Plugin 'bitfyre/vim-nginx'
 
 " vim-scripts repos
 Plugin 'L9'

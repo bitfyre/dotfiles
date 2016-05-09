@@ -37,3 +37,6 @@ Thumbs.db
 *.un~
 Session.vim
 
+# Ignore Container directories #
+################################
+.vagrant
