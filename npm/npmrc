@@ -1,1 +1,2 @@
-gobalconfig=/Users/alemanski/.npm-packages
+gobalconfig=/Users/alemanski/.npm-global
+prefix=~/.npm-global

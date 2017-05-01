@@ -24,9 +24,14 @@ export PATH=$HOME/.rbenv/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ## Load nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-export PATH=$HOME/.npm-packages/bin:$PATH
+#export NVM_DIR=~/.nvm
+#source $(brew --prefix nvm)/nvm.sh
+
+## Add global npm bin to path
+export PATH=$HOME/.npm-global/bin:$PATH
 
 ## Load pkg config
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+
+## Watchman config
+export WATCHMAN_CONFIG_FILE=$HOME/.watchmanconfig.json
