@@ -33,6 +33,8 @@ Plugin 'tpope/vim-git'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'bitfyre/solarized.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'claco/jasmine.vim'
 Plugin 'wincent/command-t'
 Plugin 'scrooloose/nerdtree'
@@ -181,6 +183,13 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 """""""""""""""""""""""""""
+" JSX
+"""""""""""""""""""""""""""
+
+" Enable jsx highlighting & indenting for .js files
+let g:jsx_ext_required = 0
+
+"""""""""""""""""""""""""""
 " Map .less to .css
 """""""""""""""""""""""""""
 nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
@@ -220,4 +229,4 @@ set foldmethod=indent
 """""""""""""""""""""""""""
 " Command-T config
 """""""""""""""""""""""""""
-let g:CommandTFileScanner = "watchman"
+let g:CommandTFileScanner = "git"
