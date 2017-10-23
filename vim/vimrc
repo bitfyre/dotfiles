@@ -54,7 +54,8 @@ Plugin 'Lokaltog/powerline-fonts'
 Plugin 'slim-template/vim-slim'
 Plugin 'jdonaldson/vaxe'
 Plugin 'bitfyre/vim-nginx'
-
+Plugin 'prettier/vim-prettier'
+Plugin 'editorconfig/editorconfig-vim'
 " vim-scripts repos
 Plugin 'L9'
 Plugin 'FuzzyFinder'
@@ -230,3 +231,10 @@ set foldmethod=indent
 " Command-T config
 """""""""""""""""""""""""""
 let g:CommandTFileScanner = "git"
+
+"""""""""""""""""""""""""""
+" Prettier config
+"""""""""""""""""""""""""""
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
+
