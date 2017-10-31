@@ -238,3 +238,10 @@ let g:CommandTFileScanner = "git"
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
 
+
+"""""""""""""""""""""""""""
+" Markdown Configs
+"""""""""""""""""""""""""""
+
+" Force markdown to wrap at 80 charactors
+au BufRead,BufNewFile *.md setlocal textwidth=80
