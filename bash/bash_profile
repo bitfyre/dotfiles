@@ -35,3 +35,9 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 ## Watchman config
 export WATCHMAN_CONFIG_FILE=$HOME/.watchmanconfig.json
+
+## Include asdf
+# source /usr/local/opt/asdf/asdf.sh
+
+## Load direnv
+eval "$(direnv hook bash)"
