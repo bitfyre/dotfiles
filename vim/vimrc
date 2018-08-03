@@ -237,7 +237,7 @@ let g:CommandTFileScanner = "git"
 """""""""""""""""""""""""""
 let g:prettier#autoformat = 0
 let g:prettier#config#trailing_comma = 'none'
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql PrettierAsync
 
 
 """""""""""""""""""""""""""
