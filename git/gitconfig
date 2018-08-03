@@ -7,6 +7,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+	commentchar = auto
 [alias]
 	rbm = rebase origin/master
 	rbd = rebase origin/develop
