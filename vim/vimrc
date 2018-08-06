@@ -36,7 +36,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'claco/jasmine.vim'
-Plugin 'wincent/command-t'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bitfyre/vim-indent-html'
@@ -59,10 +59,6 @@ Plugin 'editorconfig/editorconfig-vim'
 " vim-scripts repos
 Plugin 'L9'
 Plugin 'FuzzyFinder'
-
-" non github repos
-" Plugin 'git://git.wincent.com/command-t.git'
-" ...
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -231,6 +227,15 @@ set foldmethod=indent
 " Command-T config
 """""""""""""""""""""""""""
 let g:CommandTFileScanner = "git"
+
+"""""""""""""""""""""""""""
+" Ctrl-P config
+"""""""""""""""""""""""""""
+let g:ctrlp_map = '<c-p>'
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>m :CtrlPMRUFiles<CR>
+nnoremap <leader>f :CtrlPTag<CR>
 
 """""""""""""""""""""""""""
 " Prettier config
