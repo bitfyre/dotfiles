@@ -136,7 +136,7 @@ endif
 " Set font size
 """""""""""""""""""""""""""
 if has("gui_running")
-  set guifont=Hack:h13
+  set guifont=Hack:h14
 endif
 
 """""""""""""""""""""""""""
@@ -231,6 +231,7 @@ let g:CommandTFileScanner = "git"
 """""""""""""""""""""""""""
 " Ctrl-P config
 """""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_map = '<c-p>'
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
@@ -243,7 +244,7 @@ nnoremap <leader>f :CtrlPTag<CR>
 let g:prettier#autoformat = 0
 let g:prettier#config#trailing_comma = 'none'
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql PrettierAsync
-
+let g:prettier#exec_cmd_path = '/usr/local/opt/asdf/shims/prettier'
 
 """""""""""""""""""""""""""
 " Markdown Configs
