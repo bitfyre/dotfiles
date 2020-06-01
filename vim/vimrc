@@ -45,7 +45,7 @@ Plugin 'tpope/vim-scriptease'
 Plugin 'tpope/vim-sensible'
 Plugin 'tristen/vim-sparkup'
 "Plugin 'tpope/vim-surround'
-" Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'Lokaltog/vim-easymotion'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
@@ -59,6 +59,8 @@ Plugin 'editorconfig/editorconfig-vim'
 " vim-scripts repos
 Plugin 'L9'
 Plugin 'FuzzyFinder'
+Plugin 'martinda/Jenkinsfile-vim-syntax'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
