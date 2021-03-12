@@ -44,4 +44,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+## Add npm completion
+[[ `which gh` ]] && eval "$(gh completion -s bash)"
+
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
