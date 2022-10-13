@@ -61,6 +61,7 @@ Plugin 'L9'
 Plugin 'FuzzyFinder'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'hashivim/vim-terraform'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -245,8 +246,8 @@ nnoremap <leader>f :CtrlPTag<CR>
 """""""""""""""""""""""""""
 let g:prettier#autoformat = 0
 let g:prettier#config#trailing_comma = 'none'
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql PrettierAsync
-let g:prettier#exec_cmd_path = '/usr/local/opt/asdf/shims/prettier'
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.mdx PrettierAsync
+" let g:prettier#exec_cmd_path = '/usr/local/opt/asdf/shims/prettier'
 
 """""""""""""""""""""""""""
 " Markdown Configs
