@@ -6,11 +6,6 @@ export PATH=$HOME/path/to/scripts
 ### Add Rails config
 export RAILS_ENV=development
 
-### Add venv wraper to shell
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
-export WORKON_HOME=$HOME/.venvs
-source /usr/local/bin/virtualenvwrapper.sh
-
 ### Ansible args
 export ANSIBLE_ARGS='--ask-vault-pass'
 
