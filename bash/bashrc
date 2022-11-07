@@ -8,5 +8,5 @@ export EDITOR=vim
 
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
-[ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
 [ ! -f "$HOME/.bashrc.completion" ] || . "$HOME/.bashrc.completion"
+[ ! -f "$HOME/.bashrc.local" ] || . "$HOME/.bashrc.local"
