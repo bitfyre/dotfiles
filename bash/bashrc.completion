@@ -50,6 +50,8 @@ fi
 ## Add graphite completion
 [[ `which gt` ]] && eval "$(gt completion -s bash)"
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 _gt_yargs_completions()
 {
     local cur_word args type_list
@@ -71,6 +73,3 @@ _gt_yargs_completions()
 }
 
 complete -o bashdefault -o default -F _gt_yargs_completions gt
-
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
