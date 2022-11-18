@@ -16,7 +16,7 @@
     --pretty=format:\"%h  %ad  %C(red)%ae%Creset%x09%C(green)%d %Creset%s\"
 [gerrit]
 	createchangeid = true
-[include]
-	path = ~/.gitconfig.local
 [hub]
 	host = github.com
+[include]
+	path = ~/.gitconfig_local
