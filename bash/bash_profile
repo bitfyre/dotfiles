@@ -41,3 +41,5 @@ export PATH=$HOME/.npm-global/bin:$PATH
 
 ## Load direnv
 eval "$(direnv hook bash)"
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"

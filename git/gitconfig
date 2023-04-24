@@ -1,5 +1,6 @@
 [user]
 	name = Alex Lemanski
+	email = alemanski@luna.io
 [color]
 	diff = auto
 	status = auto
