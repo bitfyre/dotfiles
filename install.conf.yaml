@@ -2,5 +2,12 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ['~','~/.config']
 
+- link:
+    ~/.dotfiles: ''
+    ~/.zshrc: zsh/zshrc
+    ~/.zshenv: zsh/zshenv
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

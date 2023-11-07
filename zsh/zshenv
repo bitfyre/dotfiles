@@ -1,0 +1,15 @@
+. "$HOME/.zshrc"
+
+# Add Hombrew to path
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+#export PATH=$HOME/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH
+
+## Load pkg config
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+
+## Add global npm bin to path
+export PATH=$HOME/.npm-global/bin:$PATH
+
+## Load direnv
+eval "$(direnv hook bash)"

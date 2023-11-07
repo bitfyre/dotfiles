@@ -1,0 +1,15 @@
+# Enable color by default in Terminal output
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+export CLICOLOR LSCOLORS
+
+# CLI SETTINGS
+# enable the default zsh completions
+autoload -Uz compinit && compinit
+
+export EDITOR=vim
+
+# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# New zshell propt
+PROMPT="%n@%M %~ %# "
