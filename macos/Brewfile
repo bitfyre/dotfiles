@@ -8,16 +8,12 @@ brew "asdf"
 brew "awscli"
 brew "json-c"
 brew "pcre2"
-brew "yara"
-brew "clamav"
 brew "direnv"
 brew "docker-completion"
 brew "fzf"
 brew "gh"
 brew "git"
 brew "git-standup"
-brew "guile"
-brew "nettle"
 brew "unbound"
 brew "gnutls"
 brew "gnupg"
@@ -25,9 +21,6 @@ brew "jq"
 brew "ruby"
 brew "macvim"
 brew "mas"
-brew "python@3.8"
-brew "python@3.9"
-brew "sonar-scanner"
 brew "tidy-html5"
 brew "tree"
 brew "zlib"
@@ -35,16 +28,9 @@ cask "1password-cli"
 cask "docker"
 cask "iterm2"
 cask "ngrok"
-cask "oracle-jdk"
 cask "vagrant"
-cask "virtualbox"
-cask "virtualbox-extension-pack"
-mas "1Password 7", id: 1333542190
 mas "Airmail", id: 918858936
-mas "Better", id: 1121192229
 mas "Evernote", id: 406056744
-mas "Fantastical", id: 435003921
-mas "info.lazar.xliff-tool", id: 1074282695
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "Prime Video", id: 545519333
