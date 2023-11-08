@@ -37,3 +37,23 @@
 
 - brewfile:
     file: macos/Brewfile
+
+- shell:
+    - [source ~/.zshenv, Source .zshenv to prepare for asdf setup]
+
+- asdf:
+    - plugin: python
+      url: https://github.com/asdf-community/asdf-python.git
+      global: 3.11.6
+      versions:
+        - 3.11.6
+      stdout: true
+      stderr: true
+    - plugin: nodejs
+      url: https://github.com/asdf-vm/asdf-nodejs.git
+      global: 20.9.0
+      versions:
+        - 20.9.0
+        - latest
+      stdout: true
+      stderr: true
