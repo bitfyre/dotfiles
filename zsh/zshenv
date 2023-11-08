@@ -1,4 +1,5 @@
 . "$HOME/.zshrc"
+. "$HOME/.zprofile"
 
 # Add Hombrew to path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
