@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~','~/.config']
+- clean: ['~','~/.config', '~/.vim/bundle']
 
 - link:
     ~/.dotfiles: ''
@@ -11,6 +11,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     ~/.vimrc: vim/vimrc
+    ~/.npmrc: npm/npmrc
 
 - create:
     - ~/.vim/bundle
