@@ -50,7 +50,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'mbbill/undotree'
-Plugin 'Lokaltog/powerline-fonts'
+Plugin 'powerline/fonts'
 Plugin 'slim-template/vim-slim'
 Plugin 'jdonaldson/vaxe'
 Plugin 'bitfyre/vim-nginx'
@@ -139,7 +139,7 @@ endif
 " Set font size
 """""""""""""""""""""""""""
 if has("gui_running")
-  set guifont=Hack:h14
+  set guifont=Hack:h16
 endif
 
 """""""""""""""""""""""""""
