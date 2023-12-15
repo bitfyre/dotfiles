@@ -20,3 +20,5 @@
 	host = github.com
 [include]
 	path = ~/.gitconfig_local
+[init]
+	defaultBranch = main
