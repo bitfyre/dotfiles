@@ -59,7 +59,16 @@
       stderr: true
 
 - git:
-    '~/repo/powerline-fonts':
+    '$HOME/repo/powerline-fonts':
       url: 'git@github.com:powerline/fonts.git'
-      description: 'Pull Down Powerline Fonts'
+      description: 'Powerline Fonts'
+
+- if:
+    - cond: '[ -d "$HOME/repo/powerline-fonts" ]'
+      met:
+      - shell: ~/repo/powerline-fonts/install.sh
+      unmet:
+      - shell:
+        - echo Powerline Fonts not found!
+
 
