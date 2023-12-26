@@ -57,3 +57,9 @@
         - latest
       stdout: true
       stderr: true
+
+- git:
+    '~/repo/powerline-fonts':
+      url: 'git@github.com:powerline/fonts.git'
+      description: 'Pull Down Powerline Fonts'
+
