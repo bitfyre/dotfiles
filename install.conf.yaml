@@ -35,11 +35,15 @@
     - [git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim, Install Vim Vundel]
     - vim +PluginInstall +qall
 
+- shell:
+    - [source ~/.zshenv, Source .zshenv to prepare for brewfile setup]
+
 - brewfile:
     file: macos/Brewfile
 
 - shell:
     - [source ~/.zshenv, Source .zshenv to prepare for asdf setup]
+
 
 - asdf:
     - plugin: python
