@@ -13,3 +13,6 @@ export EDITOR=vim
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # New zshell propt
 PROMPT="%n@%M %~ %# "
+
+export ASDF_DATA_DIR="$HOME/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
