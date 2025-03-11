@@ -44,7 +44,6 @@
 - shell:
     - [source ~/.zshenv, Source .zshenv to prepare for asdf setup]
 
-
 - asdf:
     - plugin: python
       url: https://github.com/asdf-community/asdf-python.git
@@ -55,12 +54,17 @@
       stderr: true
     - plugin: nodejs
       url: https://github.com/asdf-vm/asdf-nodejs.git
-      global: 20.9.0
+      global: 22.14.0
       versions:
-        - 20.9.0
+        - 22.14.0
         - latest
       stdout: true
       stderr: true
+
+- shell:
+    - [mkdir -p "$HOME/.asdf/completions", Create asdf completions]
+    - [asdf completion zsh > "$ASDF_DATA_DIR/completions/_asdf", Generate asdf completions]
+    - [source ~/.zshenv, Source .zshenv to prepare for asdf setup]
 
 - git:
     '$HOME/repo/powerline-fonts':
@@ -75,5 +79,4 @@
       unmet:
       - shell:
         - echo Powerline Fonts not found!
-
 
