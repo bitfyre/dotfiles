@@ -62,6 +62,11 @@ Plugin 'FuzzyFinder'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'hashivim/vim-terraform'
+Plugin 'leafgarland/typescript-vim' " TypeScript syntax
+Plugin 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plugin 'jparise/vim-graphql'        " GraphQL syntax
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -255,3 +260,6 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.
 
 " Force markdown to wrap at 80 charactors
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" CoC extensions for TypeScript
+let g:coc_global_extensions = ['coc-tsserver']
