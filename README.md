@@ -36,3 +36,25 @@ Then run the install
 ```
 ./install
 ```
+
+Update git remotes to use ssh protocol after initial setup
+----------------------------------------------------------
+
+List current remotes
+
+```
+git remote -v
+```
+
+Set remote to use ssh protocol
+
+```
+git remote set-url origin git@github.com:OWNER/dotfiles.git
+```
+
+Verify remotes were updated
+
+```
+git remote -v
+```
+
